@@ -256,12 +256,13 @@ nav a:hover::after {
 }
 
 .about-content {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    position: relative;
-    z-index: 1;
+  display: flex;
+  align-items: center;  /* Выравниваем по центру вертикально */
+  justify-content: center;  /* Теперь точно по центру! */
+  gap: 40px;  /* Расстояние между текстом и картинкой */
+  text-align: left;  /* Текст остается слева */
 }
+
 
 .about-text {
     flex: 1;
@@ -283,18 +284,18 @@ nav a:hover::after {
 }
 
 .creator-image {
-    flex: 1;
-    position: relative;
-    z-index: 1;
+  flex: 0 1 auto;  /* Запрещаем растягиваться */
+  margin: 0 auto;  /* Центрируем картинку */
+  text-align: center;  /* На всякий случай */
 }
 
 .creator-image img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(255, 155, 179, 0.2);
-    transition: transform 0.4s;
-    border: 3px solid white;
+  max-width: 100%;  /* Чтобы не вылезала за границы */
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 155, 179, 0.3);
+  display: block;  /* Убираем лишние отступы */
+  margin: 0 auto;  /* Центрируем внутри своего контейнера */
 }
 
 .creator-image:hover img {
