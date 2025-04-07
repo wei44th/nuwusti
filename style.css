@@ -212,19 +212,17 @@ nav a:hover::after {
 }
 
 /* About Section */
+/* Обновленные стили для секций */
 .about {
-  margin: 40px auto !important;
-  width: calc(100% - 60px) !important;
-  max-width: 1100px !important;
+  margin: 30px auto !important;
+  width: calc(100% - 40px) !important;  /* Уменьшили отступы с 60px */
+  max-width: 1200px !important;        /* Увеличили максимальную ширину */
   border-radius: 25px !important;
   box-shadow: 0 10px 30px rgba(255, 155, 179, 0.3) !important;
   transform: translateY(0);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  /* Сохраняем ваши оригинальные свойства */
-  padding: 70px 0 !important;
-  background-color: rgba(255, 255, 255, 0.4) !important;
-  position: relative;
-  z-index: 5;
+  padding: 60px 40px !important;       /* Увеличили внутренние отступы */
+  background-color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .section-title {
@@ -416,18 +414,15 @@ nav a:hover::after {
 
 /* Future Plans Section */
 .design {
-  margin: 40px auto !important;
-  width: calc(100% - 60px) !important;
-  max-width: 1100px !important;
+  margin: 30px auto !important;
+  width: calc(100% - 40px) !important;  /* Уменьшили отступы с 60px */
+  max-width: 1200px !important;        /* Увеличили максимальную ширину */
   border-radius: 25px !important;
   box-shadow: 0 10px 30px rgba(184, 225, 255, 0.3) !important;
   transform: translateY(0);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  /* Сохраняем ваши оригинальные свойства */
-  padding: 70px 0 !important;
-  background-color: rgba(255, 255, 255, 0.6) !important;
-  position: relative;
-  z-index: 5;
+  padding: 60px 40px !important;       /* Увеличили внутренние отступы */
+  background-color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .design-grid {
@@ -621,10 +616,10 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-  /* Добавить внутрь существующего медиа-запроса */
   .about, .design {
-    width: calc(100% - 40px) !important;
-    margin: 30px auto !important;
+    width: calc(100% - 30px) !important; /* Еще меньше отступы на мобилках */
+    margin: 25px auto !important;
+    padding: 40px 25px !important;      /* Компактнее на маленьких экранах */
   }
 
     nav ul {
