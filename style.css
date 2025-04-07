@@ -214,15 +214,23 @@ nav a:hover::after {
 /* About Section */
 /* Обновленные стили для секций */
 .about {
+  width: 90% !important;               /* Фиксированный % от экрана */
+  max-width: 1200px !important;       /* Макс. ширина как у контейнера */
   margin: 30px auto !important;
-  width: calc(100% - 40px) !important;  /* Уменьшили отступы с 60px */
-  max-width: 1560px !important;        /* Увеличили максимальную ширину */
-  border-radius: 25px !important;
-  box-shadow: 0 10px 30px rgba(255, 155, 179, 0.3) !important;
-  transform: translateY(0);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  padding: 60px 40px !important;       /* Увеличили внутренние отступы */
-  background-color: rgba(255, 255, 255, 0.7) !important;
+  padding: 50px !important;           /* Увеличили внутренние отступы */
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(255, 155, 179, 0.3);
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(5px);         /* Лёгкое размытие фона */
+  transform: scale(1);
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 10;
+}
+
+.about:hover{
+  transform: scale(1.02) !important;
+  box-shadow: 0 15px 40px rgba(255, 182, 193, 0.5) !important;
 }
 
 .section-title {
@@ -414,15 +422,18 @@ nav a:hover::after {
 
 /* Future Plans Section */
 .design {
+  width: 90% !important;               /* Фиксированный % от экрана */
+  max-width: 1200px !important;       /* Макс. ширина как у контейнера */
   margin: 30px auto !important;
-  width: calc(100% - 40px) !important;  /* Уменьшили отступы с 60px */
-  max-width: 1560px !important;        /* Увеличили максимальную ширину */
-  border-radius: 25px !important;
-  box-shadow: 0 10px 30px rgba(184, 225, 255, 0.3) !important;
-  transform: translateY(0);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  padding: 60px 40px !important;       /* Увеличили внутренние отступы */
-  background-color: rgba(255, 255, 255, 0.8) !important;
+  padding: 50px !important;           /* Увеличили внутренние отступы */
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(255, 155, 179, 0.3);
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(5px);         /* Лёгкое размытие фона */
+  transform: scale(1);
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 10;
 }
 
 .design-grid {
@@ -445,8 +456,8 @@ nav a:hover::after {
 }
 
 .design-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(255, 182, 193, 0.25);
+  transform: scale(1.02) !important;
+  box-shadow: 0 15px 40px rgba(255, 182, 193, 0.5) !important;
 }
 
 .design-card::before {
@@ -617,9 +628,9 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
   .about, .design {
-    width: calc(100% - 30px) !important; /* Еще меньше отступы на мобилках */
-    margin: 25px auto !important;
-    padding: 40px 25px !important;      /* Компактнее на маленьких экранах */
+    width: 95% !important;            /* Почти на весь экран */
+    padding: 30px !important;
+    margin: 20px auto !important;
   }
 
     nav ul {
