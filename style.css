@@ -216,7 +216,7 @@ nav a:hover::after {
 .about {
   margin: 30px auto !important;
   width: calc(100% - 40px) !important;  /* Уменьшили отступы с 60px */
-  max-width: 1200px !important;        /* Увеличили максимальную ширину */
+  max-width: 1560px !important;        /* Увеличили максимальную ширину */
   border-radius: 25px !important;
   box-shadow: 0 10px 30px rgba(255, 155, 179, 0.3) !important;
   transform: translateY(0);
@@ -416,7 +416,7 @@ nav a:hover::after {
 .design {
   margin: 30px auto !important;
   width: calc(100% - 40px) !important;  /* Уменьшили отступы с 60px */
-  max-width: 1200px !important;        /* Увеличили максимальную ширину */
+  max-width: 1560px !important;        /* Увеличили максимальную ширину */
   border-radius: 25px !important;
   box-shadow: 0 10px 30px rgba(184, 225, 255, 0.3) !important;
   transform: translateY(0);
